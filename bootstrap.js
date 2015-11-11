@@ -6,7 +6,6 @@ const {Services} = Cu.import("resource://gre/modules/Services.jsm");
 const {LightweightThemeManager} = Cu.import("resource://gre/modules/LightweightThemeManager.jsm");
 
 function install() {
-  Services.prefs.setCharPref("devtools.theme", "dark");
   LightweightThemeManager.currentTheme = LightweightThemeManager.getUsedTheme("firefox-devedition@mozilla.org");
 }
 
